@@ -1,0 +1,61 @@
+Steps Followed
+Merege all tables 
+enable load uncheck to optimize as other unnecessary tables are not loaded 
+
+KPI-
+1. Total Revenue=sum(price)
+2. Total Orders=Distinctcount(orderid)
+3. Avg Order Value=Total revenue/total orders
+4. Total Pizzas Sold=sum(quantity)
+5. Avg Pizza per order=Total pizzas sold/total orders
+
+Visuals-
+insert shapes - rectangle--new card for KPIS
+insert text box- for pizza sales report text
+insert image for all 
+5 rectangles for 5 visuals-
+1. Daily trends for Total orders
+---identiies patterns & fluctuaions from day to day 
+Bar charts - total orders vs dayname
+For this we needs day name so add column by using date column use date and use dayname.
+Add column day number to fix sorting add column- conditonal columns-if sunday 1,monday 2 likewise
+In report view column tools-column sort- use this column
+ 
+2. Hourly Trend for total Orders
+---identifies the busiest and slowest time of day so can adjust accordingly
+Area Chart-total orders(y axis) vs hour(x axis) 
+we need hour for this ,use time -add column -time -hour
+set range 
+
+3. Monthly Trend for Tota Orders
+---This will help us understand fluctuation from month to month
+line chart total orders vs months
+no month so again by date-add column-date-name of month
+for sorting add column month number(column tools in report view)
+
+4. Percentage of Sales by Pizza Category
+---This will provide insights on popularity of each category and contribution to overall sales.
+donut chart-total revenue and category
+
+slicer new= category use select all 
+slicer old=date
+
+
+Create duplicate for page 2
+
+5. Percentage of Sales by Pizza Size
+---This will provide insights on popularity of pizza size and contribution to overall sales.
+pie chart total rev and size 
+change s,m,l to small mdeium large using replace
+
+6. Total Pizzas Sold by Pizza Category
+---This will help us understands sales performance of each pizza category.
+funnel chart-total pizza sold and category
+
+7. Top 5 Best Sellers by Total Pizzas Sold 
+---This will help us identify the most popular pizzas
+stacked pie chart-total pizza sold and name use filter under name top n -5 by value total pizza sold
+
+8. Bottom 5 Worst Sellers by Total Pizzas Sold
+---This will help us identify the lowest performers
+stacked pie chart - total pizza sold and name in filter select down 
